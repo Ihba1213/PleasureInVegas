@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_beach"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/container_edt_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14sp"
+                android:layout_marginEnd="14sp"
+                android:textColorHint="#fff"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User Name"
+                    android:inputType="text"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_email"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="14sp"
+                android:textColorHint="#fff"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Id"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="14sp"
+                android:textColorHint="#fff"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_mobile"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="14sp"
+                android:textColorHint="#fff"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/container_edt_text"
+            android:gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/image_select_layout">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_beach">
+            </ImageView>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textFontWeight="700"
+                android:gravity="center"
+                android:background="@drawable/round_corner"
+                android:layout_marginStart="22dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:text="Select IMage"></TextView>
+        </LinearLayout>
+          <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+              android:layout_below="@+id/image_select_layout"
+            android:background="@drawable/round_corner"
+            android:layout_marginStart="24dp"
+              android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:weightSum="1"
+            android:id="@+id/login_layout">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:src="@drawable/ic_beach"></ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textFontWeight="700"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                android:textColor="#000"
+                ></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
