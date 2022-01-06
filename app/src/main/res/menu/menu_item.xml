@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home_drawer_menu" />
+        <item
+            android:id="@+id/detailsFragments"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="@string/details_drawer_menu" />
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="User Profile" />
+        <item
+            android:id="@+id/dealsFragment"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="Deals" />
+        <item
+            android:id="@+id/notificationFragment"
+            android:icon="@drawable/ic_baseline_notifications_24"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings" />
+        <item
+            android:id="@+id/aboutUsFragment"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="About Us" />
+        <item
+            android:id="@+id/privacyFragment"
+            android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+            android:title="Privacy" />
+        <item
+            android:id="@+id/helpFragment"
+            android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+            android:title="Help" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+            android:title="Logout" />
+    </group>
+</menu>
