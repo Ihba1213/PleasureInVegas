@@ -1,4 +1,4 @@
-package com.example.pleasureinvegas.view
+package com.example.pleasureinvegas.view.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

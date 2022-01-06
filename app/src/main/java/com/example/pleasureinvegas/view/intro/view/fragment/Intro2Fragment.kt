@@ -1,4 +1,4 @@
-package com.example.pleasureinvegas.fragment
+package com.example.pleasureinvegas.view.intro.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

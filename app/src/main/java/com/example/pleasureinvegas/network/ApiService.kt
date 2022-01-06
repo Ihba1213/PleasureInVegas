@@ -1,6 +1,6 @@
 package com.example.pleasureinvegas.network
 
-import com.example.pleasureinvegas.model.DetailModel
+import com.example.pleasureinvegas.view.home.model.DetailModel
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded

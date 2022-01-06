@@ -1,4 +1,4 @@
-package com.example.pleasureinvegas.model;
+package com.example.pleasureinvegas.view.register.model;
 
 public class RegistrationModel {
     private String user_name;

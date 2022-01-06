@@ -2,7 +2,7 @@ package com.example.pleasureinvegas.network
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.pleasureinvegas.model.DetailModel
+import com.example.pleasureinvegas.view.home.model.DetailModel
 import retrofit2.Call
 import retrofit2.Response
 import javax.security.auth.callback.Callback

@@ -1,4 +1,4 @@
-package com.example.pleasureinvegas.adapter
+package com.example.pleasureinvegas.view.intro.view.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

@@ -1,25 +1,23 @@
-package com.example.pleasureinvegas
+package com.example.pleasureinvegas.view.intro.view
 
-import android.app.ActionBar
 import android.app.Dialog
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.view.ViewGroup
 import android.view.Window
-import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.example.pleasureinvegas.adapter.IntroSliderAdapter
+import com.example.pleasureinvegas.R
+import com.example.pleasureinvegas.view.intro.view.adapter.IntroSliderAdapter
 import com.example.pleasureinvegas.databinding.ActivityIntroSliderBinding
-import com.example.pleasureinvegas.fragment.Intro1Fragment
-import com.example.pleasureinvegas.fragment.Intro2Fragment
-import com.example.pleasureinvegas.fragment.Intro3Fragment
+import com.example.pleasureinvegas.view.intro.view.fragment.Intro1Fragment
+import com.example.pleasureinvegas.view.intro.view.fragment.Intro2Fragment
+import com.example.pleasureinvegas.view.intro.view.fragment.Intro3Fragment
+import com.example.pleasureinvegas.view.login.LoginActivity
 
 class IntroSliderActivity : AppCompatActivity() {
     lateinit var binding: ActivityIntroSliderBinding
@@ -73,7 +71,7 @@ class IntroSliderActivity : AppCompatActivity() {
         }
     }
     private fun openLoginConfirmationAlert() {
-        val dialog = Dialog(this,R.style.Theme_Dialog)
+        val dialog = Dialog(this, R.style.Theme_Dialog)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(false)
         dialog.setContentView(R.layout.login_confirmation)

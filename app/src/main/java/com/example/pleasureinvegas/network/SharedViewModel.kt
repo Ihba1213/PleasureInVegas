@@ -2,7 +2,7 @@ package com.example.pleasureinvegas.network
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.example.pleasureinvegas.model.DetailModel
+import com.example.pleasureinvegas.view.home.model.DetailModel
 
 class SharedViewModel : ViewModel() {
 

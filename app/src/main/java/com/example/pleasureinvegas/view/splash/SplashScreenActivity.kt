@@ -1,13 +1,11 @@
-package com.example.pleasureinvegas
+package com.example.pleasureinvegas.view.splash
 
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.os.Handler
-import android.os.PersistableBundle
-import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.pleasureinvegas.R
+import com.example.pleasureinvegas.view.intro.view.IntroSliderActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

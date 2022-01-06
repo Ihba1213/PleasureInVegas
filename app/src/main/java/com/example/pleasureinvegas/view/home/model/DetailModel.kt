@@ -1,4 +1,4 @@
-package com.example.pleasureinvegas.model
+package com.example.pleasureinvegas.view.home.model
 import com.google.gson.annotations.SerializedName
 
 data class DetailModel(
