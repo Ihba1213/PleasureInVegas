@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_menu_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/main_container"
+                android:layout_below="@+id/rv_menu_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".view.menudetails.MenuFragment">
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <include
+                    android:id="@+id/root_view_v1"
+                    layout="@layout/placeholder_menu" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_menu_item_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/no_record_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:gravity="center"
+                android:text="NO RECORDS FOUND !!"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+</layout>

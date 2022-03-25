@@ -6,4 +6,6 @@
     <string name="details_drawer_menu">Details</string>
     <string name="review"><u>Review</u></string>
     <string name="welcome_to_vegas">Welcome to <font color="#FFFF00">Vegas!</font></string>
+    <string name="search_text">Search for destination and hotels</string>
+    <string name="filter">Filter</string>
 </resources>

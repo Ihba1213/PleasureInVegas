@@ -1,4 +1,5 @@
-package com.example.pleasureinvegas.view.home.model
+package com.example.pleasureinvegas.view.menudetails.model
+
 import com.google.gson.annotations.SerializedName
 
 data class DetailModel(
@@ -7,7 +8,7 @@ data class DetailModel(
     @SerializedName("msg")
     val msg: String?,
     @SerializedName("status")
-    val status: Int?
+    val status: Int?,
 ) {
     data class Data(
         @SerializedName("created")
@@ -31,6 +32,7 @@ data class DetailModel(
         @SerializedName("updated_by")
         val updatedBy: String?,
         @SerializedName("url_title")
-        val urlTitle: String?
+        val urlTitle: String?,
+        var isCheck: Boolean = false,
     )
 }

@@ -1,8 +1,11 @@
 package com.example.pleasureinvegas.network
 
+import com.example.pleasureinvegas.view.base.Base
+import com.readystatesoftware.chuck.ChuckInterceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.*
 import java.util.concurrent.TimeUnit
 
 class RetrofitClient {
@@ -13,6 +16,7 @@ class RetrofitClient {
         .connectTimeout(120, TimeUnit.MINUTES)
         .readTimeout(120, TimeUnit.MINUTES)
         .writeTimeout(120, TimeUnit.MINUTES)
+        .addInterceptor(ChuckInterceptor(Objects.requireNonNull(Base.context)))
         .build()
 
 

@@ -1,5 +1,7 @@
 package com.example.pleasureinvegas.view.main
 
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -14,6 +16,7 @@ import com.example.pleasureinvegas.R
 import com.example.pleasureinvegas.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         setupBottomNavigationDrawer()
 
     }
-
 
 
     private fun setupBottomNavigationDrawer() {

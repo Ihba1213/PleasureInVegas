@@ -8,5 +8,7 @@
     <color name="black">#0C0C0C</color>
     <color name="white">#FFFFFFFF</color>
     <color name="yello">#FFFF00</color>
+    <color name="tv_background_color">#212121</color>
+    <color name="background_shimmer">#DDDDDD</color>
 
 </resources>

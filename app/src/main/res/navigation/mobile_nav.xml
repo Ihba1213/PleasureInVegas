@@ -16,12 +16,19 @@
         <action
             android:id="@+id/action_homeFragment_to_dealsFragment"
             app:destination="@id/dealsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailsFragments"
         android:name="com.example.pleasureinvegas.view.details.DetailsFragments"
         android:label="DETAILS"
-        tools:layout="@layout/fragment_details_fragments" />
+        tools:layout="@layout/fragment_details_fragments" >
+        <action
+            android:id="@+id/action_detailsFragments_to_makeReservationFragment"
+            app:destination="@id/makeReservationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/bookingFragment"
         android:name="com.example.pleasureinvegas.view.bookings.BookingFragment"
@@ -37,4 +44,18 @@
         android:name="com.example.pleasureinvegas.view.profile.ProfileFragment"
         android:label="PROFILE"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/menuFragment"
+        tools:layout="@layout/fragment_menu"
+        android:name="com.example.pleasureinvegas.view.menudetails.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_detailsFragments"
+            app:destination="@id/detailsFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeReservationFragment"
+        android:name="com.example.pleasureinvegas.view.reservation.MakeReservationFragment"
+        android:label="Make Reservation"
+        tools:layout="@layout/fragment_make_reservation" />
 </navigation>
