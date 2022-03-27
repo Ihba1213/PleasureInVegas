@@ -52,7 +52,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="-180dp"
             android:orientation="vertical">
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -141,9 +140,12 @@
                             android:id="@+id/iv_second_icon"
                             android:layout_width="125dp"
                             android:layout_height="match_parent"
-                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/dummyone"/>
+                            android:src="@drawable/dummyone" />
 
                         <RatingBar
                             android:layout_toEndOf="@+id/iv_second_icon"
@@ -180,10 +182,469 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
+                <ScrollView
+                    android:layout_below="@+id/second_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/first_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Enter Guest Details"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingStart="8dp"
+                                    android:paddingBottom="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_field_required"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="All fields required"
+                                    android:textColor="@color/teal_700"
+                                    android:layout_alignParentEnd="true"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingStart="8dp"
+                                    android:paddingBottom="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_adult"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_field_required"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="All fields required"
+                                    android:textColor="@color/teal_700"
+                                    android:textSize="12sp" />
+                                <View
+                                    android:id="@+id/view_line"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/teal_700"
+                                    android:layout_below="@+id/tv_adult"/>
+                                <LinearLayout
+                                    android:id="@+id/first_container"
+                                    android:layout_below="@+id/view_line"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_height="wrap_content">
+
+                                    <Spinner
+                                        android:id="@+id/dropdown_menu"
+                                        android:layout_width="55dp"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content" />
+
+                                    <EditText
+                                        android:id="@+id/edt_fname"
+                                        android:layout_width="0dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:hint="First Name"
+                                        android:padding="8dp"
+                                        android:background="@drawable/backgound_edt"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
+
+                                    <EditText
+                                        android:id="@+id/edt_lname"
+                                        android:layout_width="0dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:hint="Last Name"
+                                        android:padding="8dp"
+                                        android:background="@drawable/backgound_edt"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/second_container"
+                                    android:layout_below="@+id/first_container"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_height="wrap_content">
+
+                                    <Spinner
+                                        android:id="@+id/dropdown_menu_second"
+                                        android:layout_width="55dp"
+                                        android:layout_gravity="center"
+                                        android:layout_height="wrap_content" />
+
+                                    <EditText
+                                        android:id="@+id/edt_fname_second"
+                                        android:layout_width="0dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:hint="First Name"
+                                        android:padding="8dp"
+                                        android:background="@drawable/backgound_edt"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
+
+                                    <EditText
+                                        android:id="@+id/edt_lname_second"
+                                        android:layout_width="0dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:hint="Last Name"
+                                        android:padding="8dp"
+                                        android:background="@drawable/backgound_edt"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_adult_second"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/second_container"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="Adults"
+                                    android:textColor="@color/teal_700"
+                                    android:textSize="12sp" />
+                                <View
+                                    android:id="@+id/view_line_second"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/teal_700"
+                                    android:layout_below="@+id/tv_adult_second"/>
+
+                                <LinearLayout
+                                    android:id="@+id/third_container"
+                                    android:layout_below="@+id/view_line_second"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_height="wrap_content">
+
+
+                                    <EditText
+                                        android:id="@+id/edt_fname_third"
+                                        android:layout_width="0dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:hint="First Name"
+                                        android:padding="8dp"
+                                        android:background="@drawable/backgound_edt"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
+
+                                    <EditText
+                                        android:id="@+id/edt_lname_third"
+                                        android:layout_width="0dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:hint="Last Name"
+                                        android:padding="8dp"
+                                        android:background="@drawable/backgound_edt"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2 yr old"
+                                        android:padding="8dp"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/black"
+                                        android:background="@drawable/tv_background"/>
+
+                                </LinearLayout>
+
+                                <CheckBox
+                                    android:id="@+id/cb_apply_for_room"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/third_container"
+                                    android:text="Apply for all Rooms" />
+
+
+                                <LinearLayout
+                                    android:layout_below="@+id/cb_apply_for_room"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_height="wrap_content">
+
+                                    <Button
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Modify Number of Guests"
+                                        android:layout_marginEnd="5dp"
+                                        android:textSize="12sp"
+                                        android:background="@drawable/background_color_border"
+                                        android:layout_weight="1"/>
+
+                                    <Button
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="12sp"
+                                        android:text="Upgrade room type"
+                                        android:background="@drawable/background_color_border"
+                                        android:layout_weight="1"/>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="12dp"
+                            android:layout_below="@+id/first_card"
+                            android:id="@+id/second_card_below"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
+                                <TextView
+                                    android:id="@+id/prefrence"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Preferences"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_below="@+id/prefrence"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <CheckBox
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content"
+                                            android:text="Smoking Room"/>
+
+                                        <CheckBox
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content"
+                                            android:text="Anniversary"/>
+
+                                        <CheckBox
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content"
+                                            android:text="Handicapped Accessible Room"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <CheckBox
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content"
+                                            android:text="Smoking Room"/>
+
+                                        <CheckBox
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content"
+                                            android:text="Anniversary"/>
+
+                                        <CheckBox
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content"
+                                            android:text="Handicapped Accessible Room"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <CheckBox
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content"
+                                            android:text="Smoking Room"/>
+
+                                        <CheckBox
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content"
+                                            android:text="Anniversary"/>
+
+                                        <CheckBox
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_gravity="center"
+                                            android:layout_height="wrap_content"
+                                            android:text="Handicapped Accessible Room"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp"
+                            android:id="@+id/third_card_below"
+                            android:layout_below="@+id/second_card_below"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp">
+
+                                <TextView
+                                    android:id="@+id/Others"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Other"
+                                    android:paddingBottom="8dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_below="@+id/Others"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+
+                                    <EditText
+                                        android:id="@+id/refernce_number"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginEnd="5dp"
+                                        android:hint="Reference Number"
+                                        android:padding="8dp"
+                                        android:layout_marginBottom="8dp"
+                                        android:background="@drawable/backgound_edt"
+                                        android:layout_height="wrap_content"/>
+
+                                    <EditText
+                                        android:id="@+id/review_box"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginEnd="5dp"
+                                        android:hint="Customer Notes"
+                                        android:padding="8dp"
+                                        android:background="@drawable/backgound_edt"
+                                        android:layout_height="80dp"
+                                        android:layout_weight="1"/>
+
+                                </LinearLayout>
+
+
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </RelativeLayout>
+
+
+
+                </ScrollView>
+
 
             </RelativeLayout>
-
-
         </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/purple_500"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Payment Required Now $157.93"/>
+
+        <TextView
+            android:id="@+id/tv_detail_amount"
+            android:layout_below="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Amount to be calculated later $0.00"/>
+
+        <TextView
+            android:id="@+id/tv_detail_payment"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_detail_amount"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:textSize="10sp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/edt_text_payment"
+            android:layout_height="wrap_content"
+            android:text="PROCEED TO PAYMENT"/>
+
+        <TextView
+            android:id="@+id/clear_all"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_detail_payment"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            android:text="CLEAR ALL"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

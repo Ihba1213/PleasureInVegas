@@ -1,4 +1,4 @@
-package com.example.pleasureinvegas.view
+package com.example.pleasureinvegas.view.hoteldetail.viewmodel
 
 
 import androidx.lifecycle.ViewModel

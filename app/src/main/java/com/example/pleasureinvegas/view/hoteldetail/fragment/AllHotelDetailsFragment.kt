@@ -1,4 +1,4 @@
-package com.example.pleasureinvegas.view
+package com.example.pleasureinvegas.view.hoteldetail.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,10 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.pleasureinvegas.R
+import com.example.pleasureinvegas.view.hoteldetail.viewmodel.AllHotelDetailsViewModel
 
-class AllHotelDetails : Fragment() {
-
-
+class AllHotelDetailsFragment : Fragment() {
 
     private lateinit var viewModel: AllHotelDetailsViewModel
 
