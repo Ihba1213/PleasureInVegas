@@ -47,7 +47,7 @@ class HomeItemAdapter(
                 .into(ivItem)
             containerThree.setOnClickListener {
                 val bundle = Bundle()
-                bundle.putString("item_type", itemList[position].name)
+                bundle.putString("item_type", itemList[position].id)
                 Navigation.findNavController(holder.binding.root)
                     .navigate(R.id.action_homeFragment_to_menuFragment, bundle)
             }

@@ -52,7 +52,7 @@ class MenuFragment : Fragment() {
     private fun initView() {
         showLoading()
         viewModel = ViewModelProvider(this)[MenuFragmentViewModel::class.java]
-        viewModel.postMenuApi(key!!).observe(viewLifecycleOwner, {
+        viewModel.postMenuApi(key!!).observe(viewLifecycleOwner) {
             if (it.status == 1) {
                 hideLoading()
                 for (i in it.data!!) {
@@ -69,9 +69,8 @@ class MenuFragment : Fragment() {
                     Toast.makeText(requireContext(), "No Records Found!!", Toast.LENGTH_SHORT)
                         .show()
                 }
-
             }
-        })
+        }
     }
 
     private fun showLoading() {
@@ -105,7 +104,7 @@ class MenuFragment : Fragment() {
         showLoading()
         menuListDetails.clear()
         if (data.menuId != null && data.parentId != null) {
-            viewModel.postMenuDetailApi(data.menuId, data.parentId).observe(viewLifecycleOwner, {
+            viewModel.postMenuDetailApi(data.menuId, data.parentId).observe(viewLifecycleOwner) {
                 if (it.status == 1) {
                     hideLoading()
                     binding.rvMenuItemDetails.visibility = View.VISIBLE
@@ -129,7 +128,7 @@ class MenuFragment : Fragment() {
                         .show()
                 }
 
-            })
+            }
         } else {
             hideLoading()
             Toast.makeText(requireContext(), "No Records Found!!", Toast.LENGTH_SHORT).show()
